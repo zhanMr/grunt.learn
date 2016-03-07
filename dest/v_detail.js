@@ -1,0 +1,1 @@
+define("my",[],function(){return"<%=name%>"}),define("index",[],function(){return"hello grunt"}),define("test",["my","index"],function(e,t){var n={init:function(){$("#data").html(_.template(e)({name:t}))}};return n}),require(["test"],function(e){e.init()}),define("project",function(){});
